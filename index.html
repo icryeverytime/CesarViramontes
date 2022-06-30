@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+<title>Cesar Viramontes</title>
+</head>
+<body>
+  <div id="myNav" class="overlay" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Page 1</a>
+      <a href="#">Page 2</a>
+      <a href="#">Page 3</a>
+      <a href="#">Page 4</a>
+    </div>
+  </div>
+  <div style="display: none;" class="animate__animated animate__fadeInLeft" id="mySidebar" >
+    <button onclick="w3_close()" id="but" style="display: none;"> &times;</button>
+    <h2 id="title" style="display: none;"></h2>
+    <p id="description" style="display: none;"></p>
+    <img src="img/BuisnessCard/Buisness Card Photos/Buisness-card.jpg"  height="auto" id="bc1" style="display: none;">
+    <img src="img/BuisnessCard/Buisness Card Photos/BuisnessCard-PalmTree.jpg"  height="auto" id="bc2" style="display: none;">
+    <img src="img/BuisnessCard/Screen Shot 2016-08-12 at 10.01.19 PM.png"  height="auto" id="bc3" style="display: none;">
+    <img src="img/AstonishF.jpg"  height="auto" id="i1" style="display: none;">
+    <img src="img/Disco_PracticeFinal.jpg"  height="auto" id="i2" style="display: none;">
+    <img src="img/Original_albumcover(take2).jpg" height="auto" id="ac1" style="display: none;">
+    <img src="img/Rey_Colorado_Album_do-trees-feel-pain-.jpg" height="auto" id="ac2" style="display: none;">
+    <img src="img/Screen Shot 2021-08-26 at 10.34.40 PM.png"  height="auto" id="ac3" style="display: none;">
+    <img src="img/Sun Me.jpg"  height="auto" id="il3" style="display: none;">
+    <img src="img/Sun Me F.png"  height="auto" id="il33" style="display: none;">
+    <img src="img/Jerry_Salas/Jerry_Salas-01.jpg"  height="auto" id="fp1" style="display: none;">
+    <img src="img/Jerry_Salas/Jerry_Salas-02.jpg"  height="auto" id="fp2" style="display: none;">
+    <img src="img/Jerry_Salas/Jerry_Salas-03.jpg"  height="auto" id="fp3" style="display: none;">
+    <img src="img/JenniferPhotographyLogo/TIFF CMYK FINAL FOR REAL-0.jpg" width="400px" height="auto" id="final" style="display: none;">
+   </div>
+  <div class="navbar animate__animated animate__fadeInDown" id="opc">
+    <a href="#home">Cesar Viramontes</a>
+    <span style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
+  </div> 
+  <div class="intro" id="opc">
+    <p >Hello, I am a freelance graphic designer currenlty working out of Orange County.</p>
+    <img id="gif" src="img/SUN-Gif.gif" class="animate__animated animate__bounceInRight">
+  </div>
+  <div class="projects" id="opc">
+    <figure onclick="w3_open(1)">
+        <img src="img/BuisnessCard/Buisness Card Photos/Buisness-card.jpg" class="square">
+        <figcaption>Buisness Card<br>Brand Identity</figcaption>
+    </figure>
+    <figure onclick="w3_open(2)">
+      <img src="img/AstonishF.jpg" class="square">
+      <figcaption>Illustration<br>Brand Identity</figcaption>
+    </figure>
+    <figure onclick="w3_open(3)">
+      <img src="img/Disco_PracticeFinal.jpg" class="square">
+      <figcaption>Illustration<br>Brand Identity</figcaption>
+    </figure>
+    <figure onclick="w3_open(4)">
+      <img src="img/Original_albumcover(take2).jpg" class="square">
+      <figcaption>Album Cover<br>Photography</figcaption>
+    </figure>
+    <figure onclick="w3_open(5)">
+      <img src="img/Rey_Colorado_Album_do-trees-feel-pain-.jpg" class="square">
+      <figcaption>Album Cover<br>Photography</figcaption>
+    </figure>
+    <figure onclick="w3_open(6)">
+      <img src="img/Screen Shot 2021-08-26 at 10.34.40 PM.png" class="square">
+      <figcaption>Album Cover<br>Illustration</figcaption>
+    </figure>
+    <figure class="wideparent" onclick="w3_open(7)">
+      <img src="img/Sun Me.jpg" class="wide">
+      <figcaption>Illustration<br>Brand Identity</figcaption>
+    </figure>
+    <figure class="wideparent" onclick="w3_open(8)">
+      <img src="img/Jerry_Salas/Jerry_Salas-01.jpg" class="wide">
+      <figcaption>Font Project<br>Brand Identity</figcaption>
+    </figure>
+    <figure class="wideparent" onclick="w3_open(9)">
+      <img src="img/JenniferPhotographyLogo/TIFF CMYK FINAL FOR REAL-0.jpg" class="wide">
+      <figcaption>Business Card<br>Brand Identity</figcaption>
+    </figure>
+  </div>
+  <footer id="opc">
+    <img src="img/HugsAnimationWhiteBackground.gif" width="800px" height="auto">
+    <br>
+    <div id="flex">
+      <div id="instagram">
+        <a href="https://www.instagram.com/hugsforstuds/" target="_blank">
+          <img src="img/instagramhover.png" width="100px" height="auto" class="ig2">
+          <img src="img/instagram.png" width="100px" height="auto" class="ig">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }  
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  <script>
+    function w3_open(a) {
+      console.log(a)
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myNav").style.marginLeft = "600px";
+      document.getElementById("opc").style.marginLeft = "600px";
+      document.getElementById("but").style.display = "block";
+      document.getElementById("title").style.display = "block";
+      document.getElementById("gif").style.display = "none";
+      document.getElementById("description").style.display = "block";
+      document.getElementById("opc").style.opacity="0.5";
+      document.getElementById("opc").style.filter="grayscale()";
+      if(a==1)
+      {
+        document.getElementById("title").innerHTML="Business Card";
+        document.getElementById("description").innerHTML="Business Card: description";
+        document.getElementById("bc1").style.display = "block";
+        document.getElementById("bc2").style.display = "block";
+        document.getElementById("bc3").style.display = "block";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+
+      }
+      else if(a==2)
+      {
+        document.getElementById("title").innerHTML="Illustration";
+        document.getElementById("description").innerHTML="Illustration: description";
+        document.getElementById("i1").style.display="block";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==3)
+      {
+        document.getElementById("title").innerHTML="Illustration 2";
+        document.getElementById("description").innerHTML="Illustration 2: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("i2").style.display= "block";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==4)
+      {
+        document.getElementById("title").innerHTML="Album cover 1";
+        document.getElementById("description").innerHTML="Abum cover1: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="block";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==5)
+      {
+        document.getElementById("title").innerHTML="Album cover 2";
+        document.getElementById("description").innerHTML="Abum cover 2: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="block";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==6)
+      {
+        document.getElementById("title").innerHTML="Album cover 3";
+        document.getElementById("description").innerHTML="Abum cover 3: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="block";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==7)
+      {
+        document.getElementById("title").innerHTML="Ilustration 3";
+        document.getElementById("description").innerHTML="Ilustration 3: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="block";
+        document.getElementById("il33").style.display="block";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==8)
+      {
+        document.getElementById("title").innerHTML="Font project 3";
+        document.getElementById("description").innerHTML="Font project 3: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="block";
+        document.getElementById("fp2").style.display="block";
+        document.getElementById("fp3").style.display="block";
+        document.getElementById("final").style.display="none";
+      }
+      else if(a==9)
+      {
+        document.getElementById("title").innerHTML="Business card 2";
+        document.getElementById("description").innerHTML="Busness card 2: description";
+        document.getElementById("i1").style.display="none";
+        document.getElementById("bc1").style.display = "none";
+        document.getElementById("bc2").style.display = "none";
+        document.getElementById("bc3").style.display = "none";
+        document.getElementById("i2").style.display= "none";
+        document.getElementById("ac1").style.display="none";
+        document.getElementById("ac2").style.display="none";
+        document.getElementById("ac3").style.display="none";
+        document.getElementById("il3").style.display="none";
+        document.getElementById("il33").style.display="none";
+        document.getElementById("fp1").style.display="none";
+        document.getElementById("fp2").style.display="none";
+        document.getElementById("fp3").style.display="none";
+        document.getElementById("final").style.display="block";
+      }
+    }
+    function w3_close() {
+      document.getElementById("gif").style.display = "block";
+      document.getElementById("bc1").style.display = "none";
+      document.getElementById("bc2").style.display = "none";
+      document.getElementById("bc3").style.display = "none";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("but").style.display = "none";
+      document.getElementById("title").style.display = "none";
+      document.getElementById("i1").style.display="none";
+      document.getElementById("description").style.display = "none";
+      document.getElementById("opc").style.opacity="1";
+      document.getElementById("myNav").style.marginLeft = "0px";
+      document.getElementById("opc").style.marginLeft = "0px";
+    }
+  </script>
+</body>
+</html> 
